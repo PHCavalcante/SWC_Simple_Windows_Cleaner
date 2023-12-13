@@ -1,14 +1,12 @@
 import os
 from PySimpleGUI import PySimpleGUI as sg
 
-# layout
 sg.theme("BrownBlue")
 layout = [
     [sg.Text("Clean temp files?"), sg.Button("Yes",
     size=(15,1),
     tooltip="Cleans all temporary files inside the 'temp' windows folder ",
     key="button_temp_yes"),
-
 
     sg.Button("No",
     size=(10,1),
@@ -23,8 +21,8 @@ layout = [
     key="button_disk_no")]
 ]
 
-# Window
 window = sg.Window("SWC - Simple Windows Cleaner", layout, size=(350, 100))
+
 
 def deleting_tempfiles(folder_path):
     files = os.listdir(folder_path)
@@ -41,6 +39,7 @@ def deleting_tempfiles(folder_path):
 
 folder_path = "C:\\Windows\\Temp"
 
+
 def window_2():
     layout = [
         [sg.Text("Files  Succesfully cleaned!")],
@@ -48,6 +47,7 @@ def window_2():
     ]
     window = sg.Window("Done!", layout, size=(200, 100), finalize=True)
     return window
+
 
 while True:
     events, values = window.read()
@@ -65,10 +65,10 @@ while True:
         window2.close()
 
     elif events == "button_temp_no":
-        print("botão temp no foi ativado!")
+        print("temp no button activated!")
     elif events == "button_disk_yes":
         os.system('cmd /k "cleanmgr"')
     elif events == "button_disk_no":
-        print("Botão disk no foi ativado!")
+        print("disk no button activated!")
 
 window.close()
