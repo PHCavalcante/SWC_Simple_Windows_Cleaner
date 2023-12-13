@@ -19,8 +19,10 @@ SWC is a project made by me, for help me learn python and test my skills while m
 
 # Project Roadmap 🚀
 
+- [ ]  add the .exe program version
 - [ ]  Add an icon to the application 
 - [ ]  Add an option to run a system integrity check
+
 and more...
 
 # Known issues
