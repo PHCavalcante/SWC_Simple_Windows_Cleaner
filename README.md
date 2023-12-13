@@ -9,7 +9,7 @@ A simple windows system cleaner tool created with Python and SimplePyGUI.
 
 ## General info 🔎
 
-SWC is a project made by me, for help me learn python and test my skills while making something useful in some way. It uses PySimpleGUI to make the graphical user interface(GUI).
+SWC is a project made by me, to help me learn and pratice python and test my skills while making something useful in some way. It uses PySimpleGUI to make the graphical user interface(GUI).
 
 ## Technologies 🖥
 
@@ -19,7 +19,7 @@ SWC is a project made by me, for help me learn python and test my skills while m
 
 # Project Roadmap 🚀
 
-- [ ]  add the .exe program version
+- [ ]  Add the .exe program version
 - [ ]  Add an icon to the application 
 - [ ]  Add an option to run a system integrity check
 
