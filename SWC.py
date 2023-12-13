@@ -34,7 +34,7 @@ def deleting_tempfiles(folder_path):
                 os.remove(file_path)
                 print("Files successfuly deleted!")
         except:
-            print(f"Erro ao deletar os arquivos {file_path}")
+            print(f"Error! files couldn't be deleted! in {file_path}")
 
 
 folder_path = "C:\\Windows\\Temp"
