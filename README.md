@@ -19,15 +19,15 @@ SWC is a project made by me, to help me learn and pratice python and test my ski
 
 # Project Roadmap 🚀
 
-- [ ]  Add the .exe program version
-- [ ]  Add an icon to the application 
+- [x]  Add the .exe program version
+- [x]  Add an icon to the application 
 - [ ]  Add an option to run a system integrity check
 
 and more...
 
 # Known issues
 
-- [ ]  After running the disk clean, the program freezes and stop responding.
+- [x]  After running the disk clean, the program freezes and stop responding.
 
 
 
