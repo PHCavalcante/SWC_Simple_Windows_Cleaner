@@ -1,11 +1,17 @@
 import os
 from PySimpleGUI import PySimpleGUI as sg
+import subprocess
+
+# variables
+folder_path = "C:\\Windows\\Temp"
+folder_path2 = "C:\\Windows\\Prefetch"
+command = "sfc /scannow"
 
 sg.theme("BrownBlue")
 layout = [
     [sg.Text("Clean temp files?"), sg.Button("Yes",
     size=(15,1),
-    tooltip="Cleans all temporary files inside the 'temp' windows folder ",
+    tooltip="Cleans all temporary files inside the 'temp' windows folder",
     key="button_temp_yes"),
 
     sg.Button("No",
@@ -18,12 +24,30 @@ layout = [
     key="button_disk_yes"),
 
     sg.Button("No", size=(10,1),
-    key="button_disk_no")]
+    key="button_disk_no")],
+
 ]
+# Upcoming features
+'''
+[sg.Text("Run integrity check?"), sg.Button("Yes",
+size=(15,1),
+tooltip="Runs a integrity check in system files and fix if erros are found",
+key="button_integrity_yes"),
 
-window = sg.Window("SWC - Simple Windows Cleaner", layout, size=(350, 100))
+sg.Button("No", size=(10,1),
+key="button_integrity_no")]
+'''
 
+window = sg.Window("SWC - Simple Windows Cleaner", layout, size=(370, 80), icon="images/icon.ico")
 
+# Get username for cleaning the %temp% folder
+def getting_username():
+   username = os.getlogin()
+   return username
+
+folder_path3 = f"C:\\Users\\{getting_username()}\\AppData\Local\\Temp"
+
+# Function that cleans the temp folder
 def deleting_tempfiles(folder_path):
     files = os.listdir(folder_path)
 
@@ -34,11 +58,34 @@ def deleting_tempfiles(folder_path):
                 os.remove(file_path)
                 print("Files successfuly deleted!")
         except:
-            print(f"Erro ao deletar os arquivos {file_path}")
+            print(f"Error! {file_path}")
 
 
-folder_path = "C:\\Windows\\Temp"
+# Function that cleans the prefetch folder
+def deleting_prefetch(folder_path2):
+    files = os.listdir(folder_path2)
 
+    for file_name in files:
+        file_path = os.path.join(folder_path2, file_name)
+        try:
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+                print("Files successfuly deleted!")
+        except:
+            print(f"Error! {file_path}")
+
+# Function that cleans the %temp% folder
+def deleting_temp2(folder_path3):
+    files = os.listdir(folder_path3)
+
+    for file_name in files:
+        file_path = os.path.join(folder_path3, file_name)
+        try:
+            if os.path.isfile(file_path):
+                os.remove(file_path)
+                print("Files successfuly deleted!")
+        except:
+            print(f"Error! {file_path}")
 
 def window_2():
     layout = [
@@ -55,6 +102,8 @@ while True:
         break
     elif events == "button_temp_yes":
         deleting_tempfiles(folder_path)
+        deleting_temp2(folder_path2)
+        deleting_prefetch(folder_path3)
         window2 = window_2()
         while True:
             events2, values2 = window2.read()
@@ -65,10 +114,32 @@ while True:
         window2.close()
 
     elif events == "button_temp_no":
+        '''
+        NOTE: this is just for testing purposes. and for not leaving the loop without lines of code.
+        also because I have no idea of what to put here.
+        '''
+
         print("temp no button activated!")
     elif events == "button_disk_yes":
-        os.system('cmd /k "cleanmgr"')
+        subprocess.Popen(["cmd", "/c", "cleanmgr"])
+
     elif events == "button_disk_no":
+        '''
+        NOTE: this is just for testing purposes. and for not leaving the loop without lines of code.
+        also because I have no idea of what to put here.
+        '''
+
         print("disk no button activated!")
+
+    # Upcoming features
+    '''
+    elif events == "button_integrity_yes":
+        try:
+            
+            subprocess.Popen(['runas', '/user:Administrator', 'sfc /scannow'])
+        except subprocess.CalledProcessError as e:
+            print("Error! failed to run.")
+            print(f"{e}")
+    '''
 
 window.close()
