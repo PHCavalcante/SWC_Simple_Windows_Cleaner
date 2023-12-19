@@ -11,7 +11,7 @@ sg.theme("BrownBlue")
 layout = [
     [sg.Text("Clean temp files?"), sg.Button("Yes",
     size=(15,1),
-    tooltip="Cleans all temporary files inside the 'temp' windows folder",
+    tooltip="Cleans all temporary Windows files",
     key="button_temp_yes"),
 
     sg.Button("No",
