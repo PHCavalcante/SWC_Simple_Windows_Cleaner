@@ -1,6 +1,9 @@
-# SWC_Simple_Windows_Cleaner 🧹
+# [SWC_Simple_Windows_Cleaner 🧹](https://phcavalcante.github.io/SWC-Site/)
 
 A simple windows system cleaner tool created with Python and SimplePyGUI.
+
+### please visit the project website for more information:
+https://phcavalcante.github.io/SWC-Site/
 
 ## Table of Contents
 
