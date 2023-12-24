@@ -3,6 +3,9 @@
 A simple windows system cleaner tool created with Python and SimplePyGUI.
 
 ### please visit the project website for more information:
+
+#### please note that the website is not finished yet
+
 https://phcavalcante.github.io/SWC-Site/
 
 ## Table of Contents
