@@ -25,19 +25,10 @@ SWC is a project made by me, to help me learn and pratice python and test my ski
 
 # Project Roadmap 🚀
 
-- [x]  Add the .exe program version
-- [x]  Add an icon to the application 
-- [ ]  Add an option to run a system integrity check
 - [ ]  Add an option to change the application theme based in PySimpleGUI themes
-- [ ]  Add an option to run an disk defrag
 
-and more...
+AAaaand I think the next update will be the final one. I think there's nothing more to add. (I've run out of ideas)
 
 # Known issues
 
-- [x]  After running the disk clean, the program freezes and stop responding.
-
-
-
-
-
+None that I know of :)
