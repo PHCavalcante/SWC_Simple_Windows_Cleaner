@@ -50,7 +50,7 @@ python3 SWC.py
 # Project Roadmap 🚀
 
 - [x]  Add an option to change the application theme based in PySimpleGUI themes
-- [] Add an option to clean the recycle bin
+- [ ] Add an option to clean the recycle bin
 
 
 # Contributing
