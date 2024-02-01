@@ -25,8 +25,8 @@ SWC is a simple and efficient application. It was designed to facilitate the cle
 
 # Screenshots
 
-![Program Screenshot](https://github.com/PHCavalcante/SWC-Site/blob/main/images/screenshot1.PNG)
-![Program Themes](https://github.com/PHCavalcante/SWC-Site/blob/main/images/screenshot2.PNG)
+![Main Window](https://github.com/PHCavalcante/SWC_Simple_Windows_Cleaner/blob/main/screenshots/main_screen.PNG)
+![Settings Window](https://github.com/PHCavalcante/SWC_Simple_Windows_Cleaner/blob/main/screenshots/settings_window.PNG)
 
 # Instaling
 
@@ -37,23 +37,21 @@ git clone https://github.com/PHCavalcante/SWC_Simple_Windows_Cleaner.git
 Installing dependencies:
 
 ```
-pip install 
 pip install requests
 pip install customtkinter
-pip instal PIL
+pip install PIL
 ```
 
 Run the program:
 ```
-python SWC.py
+python main.py
 or
-python3 SWC.py
+python3 main.py
 ```
 
 # Project Roadmap 🚀
 
 - [x] Add an option to clean the recycle bin
-...
 
 # Contributing
 
