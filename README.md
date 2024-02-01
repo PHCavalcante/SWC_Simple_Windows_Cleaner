@@ -9,18 +9,19 @@ A simple windows system cleaner tool created with Python and SimplePyGUI.
 
 ## General info 🔎
 
-SWC is a simple and efficient application. It was designed to facilitate the cleaning and optimization of Windows operating systems, with a intuitive and simple graphical user interface. It uses PySimpleGUI to make the graphical user interface(GUI).
+SWC is a simple and efficient application. It was designed to facilitate the cleaning and optimization of Windows operating systems, with a intuitive and simple graphical user interface. It uses CustomTkinter to make the graphical user interface(GUI).
 
 # Technologies 🖥
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/release/python-3114/)
 
-[![PySimpleGUi](https://img.shields.io/badge/PySimpleGUI-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.pysimplegui.org/en/latest/#pypi-statistics-versions)
+[![CustomTkinter](https://img.shields.io/badge/PySimpleGUI-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://customtkinter.tomschimansky.com)
 
 # Main Features 💡
 
 - Cleanig of temporary files
 - Local Disk cleanup 
+- Recycle Bin Cleanup
 
 # Screenshots
 
@@ -36,8 +37,10 @@ git clone https://github.com/PHCavalcante/SWC_Simple_Windows_Cleaner.git
 Installing dependencies:
 
 ```
-pip install pysimplegui
+pip install 
 pip install requests
+pip install customtkinter
+pip instal PIL
 ```
 
 Run the program:
@@ -49,9 +52,8 @@ python3 SWC.py
 
 # Project Roadmap 🚀
 
-- [x]  Add an option to change the application theme based in PySimpleGUI themes
-- [ ] Add an option to clean the recycle bin
-
+- [x] Add an option to clean the recycle bin
+...
 
 # Contributing
 
@@ -59,7 +61,7 @@ Contributions are more than welcome, if you find any problem or have any suggest
 
 # Known issues
 
-None that I know of :)
+None that I know of 😁
 
 # License
 
