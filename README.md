@@ -15,7 +15,7 @@ SWC is a simple and efficient application. It was designed to facilitate the cle
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/downloads/release/python-3114/)
 
-[![CustomTkinter](https://img.shields.io/badge/PySimpleGUI-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://customtkinter.tomschimansky.com)
+[![CustomTkinter](https://img.shields.io/badge/CustomTkinter-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://customtkinter.tomschimansky.com)
 
 # Main Features 💡
 
