@@ -51,7 +51,8 @@ python3 main.py
 
 # Project Roadmap 🚀
 
-- [x] Add an option to clean the recycle bin
+- [ ] Fix folders sizes not displaying current size correctly
+- [ ] Add themes and customization options
 
 # Contributing
 
@@ -59,7 +60,7 @@ Contributions are more than welcome, if you find any problem or have any suggest
 
 # Known issues
 
-None that I know of 😁
+* Folders sizes are not being displayed correctly
 
 # License
 
